@@ -1,0 +1,86 @@
+
+ *{
+    padding: 0;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+        /* Inicio - Menu de navegacion */
+        nav {
+            /* outline: 1px solid yellow; */
+        }
+
+        ul {
+            /* outline: 1px solid blue; */
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background: var(--unnamed-color-e6effd) 0% 0% no-repeat padding-box;
+            background: #E6EFFD 0% 0% no-repeat padding-box;
+            line-height: 30px;
+        }
+
+        li {
+            /* outline: 1px solid red; */
+            width: 189px;
+            display: inline-block;
+            height: 16px;     
+            text-align: center;  
+        }
+            
+  /* Fin - Menu de navegacion */
+
+        header{
+            top: 94px;
+            left: 0px;
+            width: 1280px;
+            height: 280px;
+            background: var(--unnamed-color-004884) 0% 0% no-repeat padding-box;
+            background: #004884 0% 0% no-repeat padding-box;
+            opacity: 1;
+            padding-bottom: 62px;
+        }      
+
+        #titulo1 h1{
+            top: 199px;
+            left: 85px;
+            width: 443;
+            height: 79px;
+
+            margin-top: 40px;
+            font-size: 30px;
+            font-weight: bolder;
+            color: #f1eded;    
+            /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+            font: normal normal 600 32px/40px Montserrat;
+            letter-spacing: 0.5px;
+            margin-bottom: 26px;
+        }
+
+        #titulo2 p{
+            top: 304px;
+            left: 85px;
+            width: 630px;
+            height: 66px;
+            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-20)/var(--unnamed-line-spacing-30) var(--unnamed-font-family-montserrat);
+            letter-spacing: var(--unnamed-character-spacing-0);
+            color: var(--unnamed-color-ffffff);
+            text-align: left;
+            font: normal normal medium 20px/30px Montserrat;
+            letter-spacing: 1px;
+            color: #FFFFFF;
+            opacity: 1;         
+        }
+
+        #cuerpo{
+             margin-top: 62px;
+        }
+
+
+        #cabecera, ul, a{
+            font-size: 0.7rem;
+            color: rgb(53, 155, 238);
+            text-decoration: none;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            letter-spacing: 0.5px;
+        }

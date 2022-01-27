@@ -1,0 +1,58 @@
+
+    <div id="cuerpo" class="rectangulo-botonalerta">
+        <input id="btnalerta" type="text" value="La informacion de códigos CIIU está siendo cargada de manera gradual por lo que estará disponible inicialmente para los municipios que se vengan incorporando.">        
+        <form class="table table-sm" style="width: 100%; margin-top: 30px;" [formGroup]="form">
+            <table class="table">
+                <tr style="height: 25px; background: white;">
+                    <th style="width: 255;"> Departamento               </th>
+                    <th style="width: 255;"> Municipio                  </th>
+                    <th style="width: 400px;"> Busca Actividad Econimica  </th>           
+                </tr>
+                <tr>                
+                    <td style="width: 255; ">
+                            <select class="cbx1 dpto" formControlName="TDepartamanto" (change)="selectChangeDto($event)" >
+                            <option value="0" selected="0">Seleccione un departamanto</option>
+                            <ng-container *ngFor="let dpto of serviceService.listDep">                         
+                                  <option  [value]="dpto.depCodigo"> {{dpto.depNombre}}  </option>                       
+                            </ng-container>
+                        </select> 
+                    </td>
+       
+                    <td style="width: 255; ">
+                      <select class="cbx1 dpto" formControlName="TMunicipio" style="width: 200px; height: 0,1rem; font-size: xx-small;" >
+                           <option value="0" selected="0">Seleccione un municipio</option>
+                           <ng-container *ngFor="let mpio of serviceService.listMun">                         
+                                <option  [value]="mpio.munCodigo"> {{mpio.munNombre}}  </option>                       
+                           </ng-container>
+                      </select> 
+                   </td>
+                   <td  style="width: 400px;" >
+                       <input type="text" class="cbx3 dpto " formControlName="Actividad" style="width: 400px; height: 0,1rem; font-size: x-small;"  >
+                   </td> 
+                </tr>
+            </table>
+            
+
+            <table style="top: 652px; left: 117px; width: 1046px; height: 180px; border: 2px solid var(--unnamed-color-e6effd);
+                        border: 2px solid #E6EFFD; border-radius: 5px; opacity: 1; margin-top: 20px;"                  
+                        >
+
+                <thead >
+                    <tr>               
+                        <th style="width: 28px;">Codigo</th>
+                        <th style="width: 180px;">Nombre Actividad</th>
+                        <th style="width: 30px;"></th>
+                        <th style="width: 30px;"></th>       
+                    </tr>
+                 </thead>
+                        <tbody id="gtnp_Listado_Datos">
+                           <tr *ngFor="let vdata of serviceService.listDat">                    
+                             <td style="width: 28px;"> {{ vdata.codigo }} </td>
+                             <td style="width: 183px;"> {{ vdata.actividad }} </td>
+                             <td style="width: 30px;">  <a href="#"> VER NOTA </a>  </td>
+                             <td style="width: 30px;">  <a href="#"> VER TRAMITES </a> </td>             
+                           </tr>
+                       </tbody>
+             </table>
+
+        </form>

@@ -1,0 +1,14 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: red;
+    left: 0px;
+}
+
+p {
+    font-family: 'Rowdies', cursive;
+    font-size: 12px;  
+    color: #6c7580;
+ }
