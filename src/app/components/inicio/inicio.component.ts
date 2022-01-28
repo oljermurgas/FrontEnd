@@ -31,6 +31,7 @@ constructor(  private formBuilder: FormBuilder,
     }
 
   ngOnInit(): void {
+    // Inician los servicios
       this.serviceService.SObternerDepartamantos();
       this.serviceService.SObternerData();       
   }
